@@ -10,6 +10,7 @@
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <div class="container">
     <div class="card1">
         <div class="card-body">
             <tr>
@@ -28,25 +29,31 @@
                 </p>
                 
                     <h1 id="city"> Lisabon </h1> 
-                    <h1 class="city2" id="date"Friday 00:43 </h1> 
+                    <h1 class="city2" id="date"Friday 00:43> </h1> 
                     <h1 class="city2" id="description"> Cloudy </h1>
-                    
-                    <div class="row">
-                            <div class="col-6">
-                              
-                                    <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy icon" class="weather-icon float-left"/>
+              
+                              <div class="row">
+                                <div class="col-6">
+                                  <div class="clearfix weather-temperature">
+                                    <img src="" alt="Clear" id="icon" class="float-left" />
                                     <div class="float-left">
-                                        <span class="temperature" id="temperature">17</span>
-                                        <span class="units">
-                                            <a href="#" id="celsius-link">°C</a>
-                                            |
-                          <a href="#" id="fahrenheit-link">°F</a>
-                                        </span>
-                                        
+                                      <strong id="temperature"></strong
+                                        ><span class="units"
+                                          ><a href="#" id="celsius-link" class="active">°C</a> |
+                                          <a href="#" id="fahrenheit-link">°F</a></span
+                                        >
                                     </div>
                                 </div>
-                            </div>      
-                          <a href="https://github.com/Nika-cyber1/my-weather.git">Open-source code</a>, by Nika Rohovska            
+                            </div>     
+                            <div class="col-6">
+                              <ul>
+                                <li>Humidity: <span id="humidity"></span>%</li>
+                                <li>Wind: <span id="wind"></span> km/h</li>
+                              </ul>
+                            </div>
+                          </div>
+                          
+                          <a href="https://github.com/Nika-cyber1/my-weather.git"><small>Open-source code </a>, by Nika Rohovska</small>       
  <script src="src/index1.js">
  </script>
 </body>
